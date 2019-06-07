@@ -10,6 +10,9 @@ They implement various well-known optimization and ML algorithms on common datas
 
 **Labs:**
 1. Classification of the handwritten digits in the MNIST dataset using Principle Component Analysis
+    1. Train the model by running ECE403Lab1_Training.m
+    1. Test the model by running ECE403Lab1_Testing.m
+    1. Visualize any image in the testing database by running ECE403Lab1_GetImages(...), with any number between 1 and 10000 as the sole argument.
 
 ## Disclaimer:
 This code is here because I'm proud of it and I want to show my achievements.Pretty much all the code I write ends up on Github, regardless of the context it was written in. With that in mind, a few disclaimers are in order:
