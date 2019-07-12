@@ -2,12 +2,12 @@ function [TeImg,class,ClassAvImg,DiffImg,PCAImg] = ECE403Lab1_GetImages(TeIndex)
 %UNTITLED3 Summary of this function goes here
 %   Detailed explanation goes here
 % load data
-load Te28.mat
-load Lte28.mat
+load Te28.mat;
+load Lte28.mat;
 
 % load model
-load class_components.mat
-load class_means.mat 
+load class_components.mat;
+load class_means.mat; 
 
 class = Lte28(TeIndex);
 TeImg = Te28(:,TeIndex);
@@ -19,7 +19,7 @@ PCAImg = class_components(:,:,(class + 1))*f + class_means(:,(class + 1));
 
 TeImg = reshape(TeImg, [28,28]);
 ClassAvgImg = reshape(ClassAvgImg,[28,28]);
-DiffImg = reshape(DiffImg, [28,28]);
+DiffImg = mat2gray(reshape(DiffImg, [28,28]));
 PCAImg = reshape(PCAImg,[28,28]);
 
 figure();
